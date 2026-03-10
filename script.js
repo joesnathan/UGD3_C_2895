@@ -12,7 +12,6 @@ if(username === "" || password === ""){
     errorMsg.innerText = "Username atau Password tidak boleh kosong!";
     errorMsg.style.fontSize = "13px";
     errorMsg.style.color = "red";
-}
-else if(username === "jo" && password === "2895"){
+} else {
     window.location.href = "https://instagram.com/jnthn.indra";
 }});
