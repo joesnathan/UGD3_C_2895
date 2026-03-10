@@ -14,7 +14,13 @@ if(username === "" || password === ""){
     errorMsg.style.color = "red";
 }
 
-else if (password.length > 8 || password.length < 16){ 
+else if (password.length < 8){ 
+    errorMsg.innerText = "Panjang password harus antara 8-16 karakter!";
+    errorMsg.style.fontSize = "13px";
+    errorMsg.style.color = "red";
+}
+
+else if (password.length > 16){ 
     errorMsg.innerText = "Panjang password harus antara 8-16 karakter!";
     errorMsg.style.fontSize = "13px";
     errorMsg.style.color = "red";
